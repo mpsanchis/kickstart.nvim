@@ -17,11 +17,11 @@ In VSCode, this is achieved with Opt+Shift+Arrows.
 
 Nvim tutor: `:Tutor`.
 Help: `:help`
-Write `:e `
 
 ## Navigate Files
 
 Search files: `space + s (search) + f (file)`
+  - some files are ignored and not shown by Telescope. Settings could be modified, but also the core vim command `:e path/to/file` can be used
 Search files in current Neovim project: `space + s + n` 
 Search help: `space + s + h`
 Go to line: `:<line-number>` or `<line-number>gg`
