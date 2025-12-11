@@ -7,11 +7,14 @@
 Multi-line select and moving those lines up and down without breaking indentation.
 
 In VSCode, this is achieved with Opt+Arrows.
+In my config, I have a remapping of Opt+j and Opt+k to move up and down, both in normal and visual mode.
 
 ### Multi-line select and duplication 
 Select a line and duplicate it, without breaking indentation. Or select more than one and duplicate them.
 
 In VSCode, this is achieved with Opt+Shift+Arrows.
+In my config, I have a remapping of Opt+Shift+j and Opt+Shift+k to move up and down, both in normal and visual mode.
+
 
 ## Learn
 
