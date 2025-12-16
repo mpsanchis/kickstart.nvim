@@ -37,6 +37,11 @@ Go to line: `:<line-number>` or `<line-number>gg`
 End of line: `$`
 Start of line: `^`
 
+## Navigate code in files
+The command `g`, when over a symbol, will open some options related to the LSP. Especially useful are:
+- `grr`: [g]o to [r]eferences
+- `gd`: [g]o to [d]efinition
+- `grn`: [r]e[n]ame
 
 ### Edit block
 I have added mappings to perform line movement both from normal mode and visual mode.
