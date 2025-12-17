@@ -28,11 +28,17 @@ Command `:e` (for _edit_) will reload the file.
 
 ## Navigate Files
 
-Search files: `space + s (search) + f (file)`
+Move cursor:
+ - `hjkl` to move in 4 directions
+- `w`/`e` to move forward a word (beginning or end), and `b/ge` to move backward a word
+
+Search files: `leader + s (search) + f (file)`
   - some files are ignored and not shown by Telescope. Settings could be modified, but also the core vim command `:e path/to/file` can be used
-Search files in current Neovim project: `space + s + n` 
+Search INSIDE files: `leader + s (search) + g (grep)`
+
+Search files in current Neovim project: `leader + s + n` 
 Go back to navigator view: `:Explore`. This just goes to the directory where the current file is. Might need another plugin for a better experience.
-Search help: `space + s + h`
+Search help: `leader + s + h`
 Go to line: `:<line-number>` or `<line-number>gg`
 End of line: `$`
 Start of line: `^`
