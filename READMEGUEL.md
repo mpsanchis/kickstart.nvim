@@ -15,6 +15,9 @@ Select a line and duplicate it, without breaking indentation. Or select more tha
 In VSCode, this is achieved with Opt+Shift+Arrows.
 In my config, I have a remapping of Opt+Shift+j and Opt+Shift+k to move up and down, both in normal and visual mode.
 
+### Integrated terminal
+
+The native terminal can be opened with `:terminal`. I have installed a plugin called `toggleterm`, and mapped it to `leader + t`, to switch to/from terminal easier.
 
 ## Learn
 
@@ -25,6 +28,10 @@ Help: `:help`
 Files in nvim are loaded into a buffer. If an external tool (e.g. an AI agent, or a 3rd party tool) modifies a file that is open, you might see an old version. 
 
 Command `:e` (for _edit_) will reload the file.
+
+## Save Files
+The classic vi `:w` will save the current file. However, if for instance an LSP has modified many files, those changes will all be in buffers.
+Run `:wa` (write all) to flush all buffers. Otherwise looking for content with Telescope, or git/jj, will not show new contents.
 
 ## Navigate Files
 
@@ -51,7 +58,9 @@ The command `g`, when over a symbol, will open some options related to the LSP. 
 
 ### Edit block
 I have added mappings to perform line movement both from normal mode and visual mode.
-Mapping uses "<A-k>" and "<A-j>" to move a line, where "A" stands for the Meta key. The terminal running nvim defines what the Meta key is (often the left Opt key in MacOs), and can be configured per terminal. 
+Mapping uses "<A-k>" and "<A-j>" to move a line, where "A" stands for the Meta key. The terminal running nvim defines what the Meta key is (often the left Opt key in MacOs), and can be configured per terminal.
+
+A way to replace many occurrences of a string in a file is with `:%s/find/replace`.
 
 ### Navigate windows
 Sometimes "popup" windows appear in nvim, like when running ":Lazy" to manage plugins.
