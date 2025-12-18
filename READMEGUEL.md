@@ -39,6 +39,8 @@ Move cursor:
  - `hjkl` to move in 4 directions
 - `w`/`e` to move forward a word (beginning or end), and `b/ge` to move backward a word
 
+Move to matching bracket/parenthesis: `%`
+
 Search files: `leader + s (search) + f (file)`
   - some files are ignored and not shown by Telescope. Settings could be modified, but also the core vim command `:e path/to/file` can be used
 Search INSIDE files: `leader + s (search) + g (grep)`
