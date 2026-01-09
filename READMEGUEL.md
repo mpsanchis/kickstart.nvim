@@ -69,6 +69,12 @@ The symbols `[` (pre) and `]` (post) allow to move among methods and braces from
 - `[m` for "previous method start"
 - `]m` for "next method start"
 
+### Comment line
+The command `g` also allows to comment lines, both in visual and normal mode:
+- `gcc` to comment current line
+- `gc{motion}` to comment lines covered by {motion} (such as `gc1j` to comment current and line below)
+- `gc`, in visual mode, to comment lines highlighted in visual mode.
+
 ### Edit block
 I have added mappings to perform line movement both from normal mode and visual mode.
 Mapping uses "<A-k>" and "<A-j>" to move a line, where "A" stands for the Meta key. The terminal running nvim defines what the Meta key is (often the left Opt key in MacOs), and can be configured per terminal.
@@ -80,6 +86,11 @@ Sometimes "popup" windows appear in nvim, like when running ":Lazy" to manage pl
 The command "<C-w>" opens a menu to manage windows, with many options similar to tmux. Some useful keys are:
 - "<C-w> h/j/k/l" moves cursor to window that was split, using h/j/k/l motions
 - "<C-w> q" closes current window (where cursor is)
+
+### Navigate files
+If jumping between files, the following is useful to go:
+- back: `<C-o>` (ctrl+o, `o` as out of a location)
+- forth: `<C-i>` (ctrl+i, `i` as into a location, such as a schema)
 
 ## Execute Code
 The main way of executing code is by opening a terminal and running commands there. However, there are shortcuts for small commands:
@@ -102,3 +113,7 @@ They are managed with Mason, a nvim plugin that can install language analyzers. 
 - `i` installs an extension
 
 Mason stores downloaded extensions outside of nvim config, in `~/.local/share/nvim/mason/`
+
+### Code information
+
+The equivalent of "hovering over" with the mouse in VSCode is done with `K` in normal mode, to get information about a type, for instance.
