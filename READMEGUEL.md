@@ -103,6 +103,10 @@ Mapping uses "<A-k>" and "<A-j>" to move a line, where "A" stands for the Meta k
 
 A way to replace many occurrences of a string in a file is with `:%s/find/replace`.
 
+### Redo/Undo
+- `u` undoes the last action
+- `<C-r>` redoes the last action
+
 ## Navigate windows
 Sometimes "popup" windows appear in nvim, like when running ":Lazy" to manage plugins.
 The command "<C-w>" opens a menu to manage windows, with many options similar to tmux. Some useful keys are:
