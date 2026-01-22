@@ -103,6 +103,16 @@ Mapping uses "<A-k>" and "<A-j>" to move a line, where "A" stands for the Meta k
 
 A way to replace many occurrences of a string in a file is with `:%s/find/replace`.
 
+To replace in many files, one workflow that works is:
+1. Find matches with telescope (<leader><s><g>)
+2. Send matches to quickfix list (<C><q>)
+3. Apply find and replace with "change file do" `:cfdo %s/find/replace | update | bd`.
+
+Note the 3rd command does:
+3.1 Find and replace in every file
+3.2 Save all files (like `:wa`, but with all files that were modified)
+3.3 Delete all buffers (`bd`) to keep memory usage low
+
 ### Redo/Undo
 - `u` undoes the last action
 - `<C-r>` redoes the last action
@@ -156,4 +166,14 @@ TBD: how to navigate files faster? There could be plugins for this.
 - 'mini.nvim' is already installed, so [mini.files](https://github.com/nvim-mini/mini.files) might be interesting.
 - 'oil.nvim' is what many people use: https://github.com/stevearc/oil.nvim
 - 'yazi.nvim' is used by people who use yazi as a file manager: https://github.com/mikavilpas/yazi.nvim
+Note: would be nice to have something that displayed repo overview in filesystem, and also moved cursor to "current file" if exists (coming from a file)
 
+# Doubts 
+- How to visualize the project directories?
+- How to "scroll" around?
+- How to move around when in "insert" mode, without going back to normal mode?
+- How to collapse a JSON section?
+- How to format a file quickly?
+- How to find and replace globally? (I do `:%s/foo/bar` for current file)
+- How to find, filtering by file type? (apart from `fd` + `rg`?)
+- How to jump words in terminal? b/w works, but insert mode jumps back to end of line.
