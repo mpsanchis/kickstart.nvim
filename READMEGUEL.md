@@ -169,11 +169,12 @@ TBD: how to navigate files faster? There could be plugins for this.
 Note: would be nice to have something that displayed repo overview in filesystem, and also moved cursor to "current file" if exists (coming from a file)
 
 # Doubts 
-- How to visualize the project directories?
-- How to "scroll" around?
-- How to move around when in "insert" mode, without going back to normal mode?
-- How to collapse a JSON section?
-- How to format a file quickly?
-- How to find and replace globally? (I do `:%s/foo/bar` for current file)
-- How to find, filtering by file type? (apart from `fd` + `rg`?)
-- How to jump words in terminal? b/w works, but insert mode jumps back to end of line.
+- How to visualize the project directories? -> tree or oil 
+- How to "scroll" around? -> https://github.com/folke/snacks.nvim/blob/main/docs/scroll.md
+- How to find comfortably in file? --> https://github.com/folke/flash.nvim
+- How to move around when in "insert" mode, without going back to normal mode? -> patience
+- How to collapse a JSON section? --> https://fx.wtf/
+- How to format a file quickly? --> fx.wtf as well for json, otherwise conform.nvim  
+- How to find and replace globally? (I do `:%s/foo/bar` for current file) --> look for plugins?
+- How to find, filtering by file type? (apart from `fd` + `rg`?) --> see in telescope config?
+- How to jump words in terminal? b/w works, but insert mode jumps back to end of line. --> see alternatives like tmux (or: https://github.com/nvim-pack/nvim-spectre)
