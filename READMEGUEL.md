@@ -134,6 +134,8 @@ The command "<C-w>" opens a menu to manage windows, with many options similar to
 - "<C-w> h/j/k/l" moves cursor to window that was split, using h/j/k/l motions
 - "<C-w> q" closes current window (where cursor is)
 
+After adding the plugin `christoomey/vim-tmux-navigator`, the combination `<C-hjkl>` will move to the adjacent tmux panes.
+
 ## Navigate files
 If jumping between files, the following is useful to go:
 - back: `<C-o>` (ctrl+o, `o` as out of a location)
