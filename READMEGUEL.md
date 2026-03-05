@@ -60,6 +60,17 @@ Move cursor:
 
 Move to matching bracket/parenthesis: `%`
 
+### Search within a file
+The default vim search is with `/`, which enters command mode. From there:
+- `n` goes to the [n]ext word, and 
+- `N` to the previous one
+
+The plugin `flash.nvim` enhances the search in several scenarios:
+- When searching with `/`, characters appear to jump directly to the search findings
+- From normal mode, `s` opens an enhanced search, with characters, similar to normal search enhanced
+- From normal mode, `S` opens a Treesitter search, that allows to jump to visual mode selecting blocks
+- After typing `{f/F/t/T}{char}`, you can go to matches back (`,`) and forth (`;`).
+
 ### Search files (find/fd) and content (grep/rg)
 Search files: `leader + s (search) + f (file)`
   - some files are ignored and not shown by Telescope. Settings could be modified, but also the core vim command `:e path/to/file` can be used
