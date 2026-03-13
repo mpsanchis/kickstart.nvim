@@ -268,6 +268,10 @@ require('lazy').setup({
   },
   'ThePrimeagen/vim-be-good',
   {
+    "lervag/vimtex",
+    lazy = false, -- As specified by vimtex docs
+  },
+  {
     "christoomey/vim-tmux-navigator",
     cmd = {
       "TmuxNavigateLeft",
